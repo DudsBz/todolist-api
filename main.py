@@ -13,8 +13,8 @@ def home():
 
 @app.route('/tarefas')
 def get_tarefa():
-    tarefas = buscar_tarefas()
-    return tarefas
+    #tarefas = buscar_tarefas()
+    return buscar_tarefas()
 
 if __name__ == '__main__':
     app.run(debug=True)
