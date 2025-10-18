@@ -11,7 +11,7 @@ def login(usuario):
 def home():
     return render_template('home.html')
 
-@app.route('/home/tarefas')
+@app.route('/tarefas')
 def get_tarefa():
     tarefas = buscar_tarefas()
     return tarefas
